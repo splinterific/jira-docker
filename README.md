@@ -1,3 +1,12 @@
+# Note
+This is a build out of the Jira docker Image by Ivan Tichý to use Jira 6.0 in a build. This was modified and uploaded to the docker hub. It can be installed and run with this method:
+
+`docker run -d --name jira_6 -p 8080:8080  splinterific/jira:latest`
+
+The docker image can be stopped by running `docker stop jira_6`. 
+
+*Be aware, I removed the `check.gpr` in this dockerfile as I was unable to locate the checksum for that install of Jira as its so old.*
+
 # News
 Just moved to JIRA 7.13.0!
 
